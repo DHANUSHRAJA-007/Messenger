@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ChatCards extends StatelessWidget {
+class Callcard extends StatelessWidget {
   final String name;
   final String message;
-  final String time;
+ 
+  final IconData icon;
 
-  const ChatCards({
+  const Callcard({
     super.key,
     required this.name,
     required this.message,
-    required this.time,
+
+    required this.icon,
   });
 
   @override
@@ -55,7 +57,7 @@ class ChatCards extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 20),
-                      child: Text(time, style: TextStyle(color: Colors.grey)),
+                      child: Icon(icon, color: Colors.white),
                     ),
                   ],
                 ),
