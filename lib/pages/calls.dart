@@ -7,10 +7,11 @@ class Calls extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
+   
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+                automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         title: Text("Calls", style: TextStyle(color: Colors.white)),
         actions: [
@@ -28,20 +29,21 @@ class Calls extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Text(
-                  "Favourites",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Favourites",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
+                  Spacer(),
 
-                Padding(
-                  padding: EdgeInsets.only(left: width * 0.5),
-                  child: TextButton(
+                  TextButton(
                     style: TextButton.styleFrom(
                       backgroundColor: const Color.fromARGB(106, 158, 158, 158),
                     ),
@@ -55,12 +57,12 @@ class Calls extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             ChatCards(name: "Group", message: "", time: ""),
             Text(
-              "Recent",
+              "   Recent",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20,

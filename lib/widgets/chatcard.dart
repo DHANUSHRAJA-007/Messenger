@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:messenger/pages/chatpage.dart';
 
 class ChatCards extends StatelessWidget {
   final String name;
   final String message;
   final String time;
-
   const ChatCards({
     super.key,
     required this.name,
@@ -19,24 +20,28 @@ class ChatCards extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Get.to(Chatpage());
+        },
         child: SizedBox(
           height: height * 0.1,
           width: width,
-
           child: Row(
             children: [
               SizedBox(
                 width: width * 0.15,
-                // color: Colors.amber,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [CircleAvatar(radius: 30)],
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundImage: AssetImage("user.jpg"),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(
                 width: width * 0.62,
-                // color: const Color.fromARGB(255, 17, 208, 230),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 20, left: 10),
                   child: Column(
@@ -50,7 +55,6 @@ class ChatCards extends StatelessWidget {
               ),
               SizedBox(
                 width: width * 0.16,
-                // color: const Color.fromARGB(255, 7, 255, 77),
                 child: Column(
                   children: [
                     Padding(

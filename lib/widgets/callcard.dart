@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Callcard extends StatelessWidget {
   final String name;
   final String message;
- 
+
   final IconData icon;
 
   const Callcard({
@@ -33,7 +33,12 @@ class Callcard extends StatelessWidget {
                 // color: Colors.amber,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [CircleAvatar(radius: 30)],
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundImage: AssetImage("user.jpg"),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(

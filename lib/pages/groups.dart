@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:messenger/pages/mainpage.dart';
 
-import 'allpage.dart';
 
 class Groups extends StatelessWidget {
   const Groups({super.key});
@@ -12,8 +12,7 @@ class Groups extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-
+       mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
               onPressed: () {},
@@ -25,7 +24,7 @@ class Groups extends StatelessWidget {
             SizedBox(height: 25),
             TextButton(
               onPressed: () {
-                 Get.to(Allpage());
+                 Get.to(Mainpage());
               },
               child: Text(
                 "View all chats",

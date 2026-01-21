@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:messenger/pages/allpage.dart';
+import 'package:messenger/pages/mainpage.dart';
 
 class Unread extends StatelessWidget {
   const Unread({super.key});
@@ -23,7 +23,7 @@ class Unread extends StatelessWidget {
             SizedBox(height: 25),
             TextButton(
               onPressed: () {
-                Get.to(Allpage());
+                Get.to(Mainpage());
               },
               child: Text(
                 "View all chats",

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:messenger/pages/mainpage.dart';
 
 class Newlist extends StatelessWidget {
   const Newlist({super.key});
@@ -9,19 +11,17 @@ class Newlist extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
               onPressed: () {},
-              child: Text(
-                "Add New chat",
-                style: TextStyle(color: Colors.grey),
-              ),
+              child: Text("Add New chat", style: TextStyle(color: Colors.grey)),
             ),
             SizedBox(height: 25),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(Mainpage());
+              },
               child: Text(
                 "View all chats",
                 style: TextStyle(

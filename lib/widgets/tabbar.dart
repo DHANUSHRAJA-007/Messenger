@@ -37,13 +37,16 @@ class Tabbar extends StatelessWidget {
         Tab(
           child: Container(
             height: 30,
-            width: 100,
+
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(20)),
               border: Border.all(color: Colors.grey),
             ),
             child: Center(
-              child: Text("Favourites", selectionColor: Colors.white),
+              child: Padding(
+                padding: const EdgeInsets.all(3.0),
+                child: Text("Favourite", selectionColor: Colors.white),
+              ),
             ),
           ),
         ),

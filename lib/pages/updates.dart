@@ -28,37 +28,44 @@ class Updates extends StatelessWidget {
 
       body: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Status",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
+            Align(
+              alignment: AlignmentDirectional.topStart,
+              child: Text(
+                "   Status",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
-
+            SizedBox(height: height * 0.02),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Statuscard(name: "Girish"),
-                  Statuscard(name: "Siva"),
-                  Statuscard(name: "Dhanush"),
-                  Statuscard(name: "Vijay"),
-                  Statuscard(name: "Sanjay"),
-                  Statuscard(name: "Girish"),
+                  Statuscard(name: "USER"),
+                  Statuscard(name: "USER"),
+                  Statuscard(name: "USER"),
+                  Statuscard(name: "USER"),
+                  Statuscard(name: "USER"),
+                  Statuscard(name: "USER"),
                 ],
               ),
             ),
+            SizedBox(height: height * 0.02),
 
-            Text(
-              "Channels",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
+            Align(
+              alignment: AlignmentDirectional.topStart,
+              child: Text(
+                "   Channels",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
 
@@ -78,6 +85,7 @@ class Updates extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(30)),
               onTap: () {},
               child: Container(
+                alignment: Alignment.center,
                 height: height * 0.07,
                 width: width * 0.95,
                 decoration: BoxDecoration(

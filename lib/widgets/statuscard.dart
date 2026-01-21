@@ -35,6 +35,7 @@ class Statuscard extends StatelessWidget {
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.white,
+                    image: DecorationImage(image: AssetImage("user.jpg")),
                   ),
                 ),
               ),
