@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:messenger/pages/allpage.dart';
-import 'package:messenger/pages/blankpage.dart';
 import 'package:messenger/pages/favourites.dart';
 import 'package:messenger/pages/groups.dart';
-import 'package:messenger/pages/homepage.dart';
-import 'package:messenger/pages/mainpage.dart';
 import 'package:messenger/pages/newlist.dart';
 import 'package:messenger/pages/unread.dart';
-import 'package:messenger/widgets/buttons.dart';
-import 'package:messenger/widgets/chatcard.dart';
 import 'package:messenger/widgets/tabbar.dart';
 
 class Homepage extends StatefulWidget {
