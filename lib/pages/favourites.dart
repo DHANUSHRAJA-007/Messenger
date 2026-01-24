@@ -15,7 +15,9 @@ class Favourites extends StatelessWidget {
 
           children: [
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(Mainpage());
+              },
               child: Text(
                 "No Favourites chats",
                 style: TextStyle(color: Colors.grey),

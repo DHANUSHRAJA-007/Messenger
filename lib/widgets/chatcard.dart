@@ -35,7 +35,7 @@ class ChatCards extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 30,
-                      backgroundImage: AssetImage("user.jpg"),
+                      backgroundImage: AssetImage("assets/user.jpg"),
                     ),
                   ],
                 ),

@@ -13,63 +13,43 @@ class Tabbar extends StatelessWidget {
       dividerColor: Colors.black,
       tabs: [
         Tab(
-          child: Container(
-            height: 30,
-            width: 40,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              border: Border.all(color: Colors.grey),
-            ),
-            child: Center(child: Text("All", selectionColor: Colors.white)),
-          ),
-        ),
-        Tab(
-          child: Container(
-            height: 30,
-            width: 60,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              border: Border.all(color: Colors.grey),
-            ),
-            child: Center(child: Text("Unread", selectionColor: Colors.white)),
-          ),
-        ),
-        Tab(
-          child: Container(
-            height: 30,
-
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              border: Border.all(color: Colors.grey),
-            ),
-            child: Center(
-              child: Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: Text("Favourite", selectionColor: Colors.white),
-              ),
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text("All", style: TextStyle(color: Colors.white)),
             ),
           ),
         ),
         Tab(
-          child: Container(
-            height: 30,
-            width: 60,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              border: Border.all(color: Colors.grey),
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text("Unread", style: TextStyle(color: Colors.white)),
             ),
-            child: Center(child: Text("Groups", selectionColor: Colors.white)),
           ),
         ),
         Tab(
-          child: Container(
-            height: 30,
-            width: 40,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-              border: Border.all(color: Colors.grey),
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text("Favourites", style: TextStyle(color: Colors.white)),
             ),
-            child: Center(child: Text("+", selectionColor: Colors.white)),
+          ),
+        ),
+        Tab(
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text("Groups", style: TextStyle(color: Colors.white)),
+            ),
+          ),
+        ),
+        Tab(
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text("New", style: TextStyle(color: Colors.white)),
+            ),
           ),
         ),
       ],

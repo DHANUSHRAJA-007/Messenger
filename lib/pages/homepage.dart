@@ -23,7 +23,7 @@ class _HomepageState extends State<Homepage> {
       child: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-                  automaticallyImplyLeading: false,
+          automaticallyImplyLeading: false,
           backgroundColor: Colors.black,
           title: const Text("WhatsApp", style: TextStyle(color: Colors.white)),
           bottom: PreferredSize(

@@ -26,7 +26,7 @@ class Chatpage extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 25,
-                  backgroundImage: AssetImage("user.jpg"),
+                  backgroundImage: AssetImage("assets/user.jpg"),
                 ),
               ],
             ),

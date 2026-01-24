@@ -14,7 +14,9 @@ class Unread extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(Mainpage());
+              },
               child: Text(
                 "No unread chats",
                 style: TextStyle(color: Colors.grey),
